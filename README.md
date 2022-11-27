@@ -12,16 +12,24 @@ Write a program to print Hollow Diamond Pattern in Java
                     Scanner console = new Scanner(System.in);
                     System.out.print("Enter Number of Rows: ");
                     int row = console.nextInt();
+                    
+                    //Outer Loop
                     for (int i =1; i<= row; i++) {
-                        for (int sp =1; sp<=row-i; sp++)
+                    
+                        for (int sp =1; sp<=row-i; sp++) //Loop for Spaces
                             System.out.print(" ");
-                        for (int j = 1; j<= i*2-1; j++)
+                            
+                        for (int j = 1; j<= i*2-1; j++) //Loops for Printin Stars * For Upper Half
                             if(i==1||j==1||j==2*i-1)
                                 System.out.print("*");
                             else
                                 System.out.print(" ");
                         System.out.println();
                         }
+                        
+                        //Outer Loop for Bottom Half
+                        
+                        
                     for (int i =row-1; i>= 1; i--) {
                         for (int sp =1; sp<=row-i; sp++)
                             System.out.print(" ");
